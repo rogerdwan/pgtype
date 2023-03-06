@@ -26,9 +26,13 @@ func (dst *Macaddr) Set(src interface{}) error {
 
 	switch value := src.(type) {
 	case net.HardwareAddr:
-		addr := make(net.HardwareAddr, len(value))
-		copy(addr, value)
-		*dst = Macaddr{Addr: addr, Status: Present}
+		if len(value) == 0 {
+			*dst = Inet{Status: Null}
+		}else {
+			addr := make(net.HardwareAddr, len(value))
+			copy(addr, value)
+			*dst = Macaddr{Addr: addr, Status: Present}
+		}
 	case string:
 		addr, err := net.ParseMAC(value)
 		if err != nil {
