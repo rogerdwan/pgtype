@@ -27,8 +27,8 @@ func (dst *Macaddr) Set(src interface{}) error {
 	switch value := src.(type) {
 	case net.HardwareAddr:
 		if len(value) == 0 {
-			*dst = Inet{Status: Null}
-		}else {
+			*dst = Macaddr{Status: Null}
+		} else {
 			addr := make(net.HardwareAddr, len(value))
 			copy(addr, value)
 			*dst = Macaddr{Addr: addr, Status: Present}
