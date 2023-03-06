@@ -7,7 +7,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/jackc/pgtype"
+	"github.com/rogerdwan/pgtype"
 	"github.com/jackc/pgx/v4"
 	_ "github.com/jackc/pgx/v4/stdlib"
 	_ "github.com/lib/pq"
@@ -352,7 +352,7 @@ func TestScanPlanBinaryInt32ScanScanner(t *testing.T) {
 	assert.Nil(t, ptr)
 }
 
-// Test for https://github.com/jackc/pgtype/issues/164
+// Test for https://github.com/rogerdwan/pgtype/issues/164
 func TestScanPlanInterface(t *testing.T) {
 	ci := pgtype.NewConnInfo()
 	src := []byte{0, 42}

@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/jackc/pgtype"
-	"github.com/jackc/pgtype/testutil"
+	"github.com/rogerdwan/pgtype"
+	"github.com/rogerdwan/pgtype/testutil"
 	"github.com/jackc/pgx/v4"
 )
 

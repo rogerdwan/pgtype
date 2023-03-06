@@ -8,9 +8,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jackc/pgtype"
-	shopspring "github.com/jackc/pgtype/ext/shopspring-numeric"
-	"github.com/jackc/pgtype/testutil"
+	"github.com/rogerdwan/pgtype"
+	shopspring "github.com/rogerdwan/pgtype/ext/shopspring-numeric"
+	"github.com/rogerdwan/pgtype/testutil"
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/require"
 )

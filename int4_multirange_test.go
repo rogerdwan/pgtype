@@ -3,8 +3,8 @@ package pgtype_test
 import (
 	"testing"
 
-	"github.com/jackc/pgtype"
-	"github.com/jackc/pgtype/testutil"
+	"github.com/rogerdwan/pgtype"
+	"github.com/rogerdwan/pgtype/testutil"
 )
 
 func TestInt4multirangeTranscode(t *testing.T) {

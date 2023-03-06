@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jackc/pgtype"
-	"github.com/jackc/pgtype/testutil"
+	"github.com/rogerdwan/pgtype"
+	"github.com/rogerdwan/pgtype/testutil"
 )
 
 type customDate struct {

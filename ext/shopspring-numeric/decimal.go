@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/jackc/pgtype"
+	"github.com/rogerdwan/pgtype"
 	"github.com/shopspring/decimal"
 )
 

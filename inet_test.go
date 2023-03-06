@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jackc/pgtype"
-	"github.com/jackc/pgtype/testutil"
+	"github.com/rogerdwan/pgtype"
+	"github.com/rogerdwan/pgtype/testutil"
 	"github.com/stretchr/testify/assert"
 )
 
